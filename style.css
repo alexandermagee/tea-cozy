@@ -1,0 +1,76 @@
+*{
+    background-color: black;
+    color:#a8a79a;
+}
+
+.container {
+    height: auto;
+    width: 100%;
+    display: grid;
+    grid-template-rows: minmax(69px,auto) 700px 700px 500px 200px 69px;
+    grid-template-columns: 100%;
+    grid-template-areas: 
+    "navBar"
+    "ourMission"
+    "teaOfTheMonth"
+    "locations"
+    "contact"
+    "copyright"
+}
+
+.cell {
+    border: solid red;
+}
+
+/* NAVBAR AREA */
+
+.navBar {
+    grid-area: navBar;
+    display: inline-flex;
+    justify-content: space-between;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.navBar img{
+    width: auto;
+    height: 50px;
+}
+
+.navBar section {
+    display: inline-flex;
+    min-width: 25%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navBar a {
+    padding: 10px;
+}
+
+/* OUR MISSION AREA */
+
+.ourMission {
+    grid-area: ourMission;
+    background-image: url(Images/img-mission-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: grid;
+    align-content: center;
+}
+
+.ourMission header {
+   width: 100%;
+   height: max-content;
+   text-align: center;
+}
+
+/* TEA OF THE MONTH AREA */
+
+.teaOfTheMonth {
+    grid-area: teaOfTheMonth;
+    display: grid;
+    grid-template-rows: 1fr 2fr;
+    grid-template-columns: 100%;
+    
+}

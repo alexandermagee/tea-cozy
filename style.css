@@ -7,7 +7,7 @@
     height: auto;
     width: 100%;
     display: grid;
-    grid-template-rows: minmax(69px,auto) 700px minmax(700px,auto) 500px 200px 69px;
+    grid-template-rows: minmax(69px,auto) 700px minmax(700px,auto) minmax(500px,auto) 200px 69px;
     grid-template-columns: 100%;
     text-align: center;
     grid-template-areas: 
@@ -99,3 +99,16 @@
 }
 
 
+/* LOCATIONS AREA */ 
+
+.locations {
+    grid-area: locations;
+    background-image: url(Images/img-locations-background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.locations header,
+.locations h2 {
+    background-color: transparent;
+}

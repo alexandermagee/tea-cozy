@@ -1,6 +1,6 @@
 *{
     background-color: black;
-    color:#a8a79a;
+    color: seashell;
 }
 
 .container {
@@ -20,7 +20,6 @@
 }
 
 .cell {
-    border: solid red;
 }
 
 /* NAVBAR AREA */
@@ -104,11 +103,58 @@
 .locations {
     grid-area: locations;
     background-image: url(Images/img-locations-background.jpg);
+    background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 1fr 3fr;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
 }
 
 .locations header,
 .locations h2 {
     background-color: transparent;
+}
+
+.locations header {
+    align-self: end;
+}
+
+.locations article {
+    display: flex;
+    align-content: flex-start;
+    justify-content: center;
+    background-color: transparent;
+}
+
+.locations article div {
+    height: max-content;
+    width: 300px;
+    padding: 2%;
+    margin: 0px 40px;
+}
+
+/* CONTACT AREA */
+
+.contact {
+    grid-area: contact;
+}
+
+.contact h2 {
+    margin-top: 10px;
+    margin-bottom: 40px;
+}
+
+/* COPYRIGHT AREA */
+
+.copyright {
+    grid-area: copyright;
+}
+
+.copyright h5 {
+    text-align: left;
+    padding-left: 20px;
 }
